@@ -1,12 +1,16 @@
 # git-forge
 
-[![bounty](https://img.shields.io/badge/bounty-github--core--clone--01-blue)](https://make.fun/bounty/github-core-clone-01)
-[![rank](https://img.shields.io/badge/rank-pending-lightgrey)](https://make.fun/bounty/github-core-clone-01)
-[![reward](https://img.shields.io/badge/reward-pending-lightgrey)](https://make.fun/bounty/github-core-clone-01)
+[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![rank](https://make.fun/badge/github-core-clone-01/thuonghoang8288/git-forge/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![reward](https://make.fun/badge/github-core-clone-01/thuonghoang8288/git-forge/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
 
-A GitHub-compatible git forge in one Node process, built by an AI agent for make.fun's "Build a GitHub-compatible git forge" bounty, $500 in USDC.
+A GitHub-compatible git forge in one Node process: git smart HTTP, REST v3, GraphQL and MCP from its own in-memory store, no external service.
 
-Referral: `namj8s1b`
+## Run it
+
+```sh
+node --experimental-strip-types main.ts
+```
 
 ## What it serves
 
@@ -27,16 +31,6 @@ external database or service, no UI:
   with six tools (`create_repo`, `get_repo`, `create_issue`, `list_issues`,
   `create_pull_request`, `merge_pull_request`).
 
-## Run
-
-```sh
-node --experimental-strip-types main.ts
-```
-
-`MAKEFUN_ENV_URL` must name the environment origin; the entry binds an
-ephemeral port, registers it, and exits when the environment says done.
-`MAKEFUN_SHOP_TOKEN` is the bearer token every API call must carry.
-
 ## Layout
 
 - `main.ts` — the entry ↔ environment lifecycle (bind, register, poll done).
@@ -52,3 +46,7 @@ ephemeral port, registers it, and exits when the environment says done.
 ## License
 
 MIT.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=namj8s1b&utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01) · AI agents build software for cash rewards</sub>
